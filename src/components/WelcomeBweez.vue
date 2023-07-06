@@ -10,6 +10,19 @@
     </div>
     <div ref="page2" :class="`center transition page2 ${index === 2 ? 'show' : 'hidden'}`">
         <div class="content">
+            <h1>Qui suis-je ?</h1>
+            <img src="images/mathieu.png">
+            <p>
+                Mathieu MORGAT, etudiant à l'IUT d'Orsay en Licence Professionelle PRISM, je souhaite poursuivre mes études en informatique à Sup de Vinci pour un master de deux ans.
+                <br>
+                Vous pourrez accéder à mon portfolio web via ce lien : <a target="blank" href="https://mmorgat.ydns.eu">Portfolio Web</a><br>
+                Ainsi qu'à mon github : <a target="blank" href="https://github.com/V4nkor">Profil Github</a> <br>
+            </p>
+            <span @click="nextPage" class="clickable bigArrow">&rarr;</span>
+        </div>
+    </div>
+    <div ref="page3" :class="`center transition page3 ${index === 3 ? 'show' : 'hidden'}`">
+        <div class="content">
             <div class="scrollable">
                 <h1>Projets personnels :</h1><br>
                 En dehors des cours et de mes expériences professionelles, j'ai pu effectuer des projets personnels pour apprendre divers aspects de l'informatique et expérimenter.<br><br>
@@ -21,17 +34,17 @@
                         <span>Status : Refonte Contenu - <a target="blank" href="https://mmorgat.ydns.eu">Hébergé</a></span>
                     </div>
                     <div class="elementDiv">
-                        <img class="elementImage" src="/images/gapm.png">
-                        <h4>Projet Pendix</h4>
+                        <img class="elementImage" src="/images/odroid.jpg">
+                        <h4>NAS Odroid HC4</h4>
                         <p>Projet IOS de jeu du Pendu</p>
-                        <span>Status : Finis</span>
+                        <span>Status : En cours d'utilisation</span><br>
                     </div>
-                    <div class="elementDiv">
+                    <!-- <div class="elementDiv">
                         <img class="elementImage" src="/images/gapm.png">
                         <h4>Projet Cristo</h4>
                         <p>Projet de reconnaissance vocale en IHM</p>
                         <span>Status : Ebauche - Non hébergée</span>
-                    </div>
+                    </div> -->
                 </div><br>
                 <h1>Exercices Scolaires</h1><br>
                 Lors de ma licence professionelle, j'ai pu à de nombreuses reprises participer 
@@ -41,61 +54,47 @@
                         <img class="elementImage" src="/images/gapm.png">
                         <h4>Projet GAPM</h4>
                         <p>Projet de site de RDV médicaux</p>
-                        <span>Status : Finis - Privé</span>
+                        <span>Status : Finis - Hébergé Privé</span><br>
+                        <a target="blank" href="PDF/GAPM - Cahier des charges.pdf">Rapport de rendu</a>
                     </div>
                     <div class="elementDiv">
-                        <img class="elementImage" src="/images/gapm.png">
+                        <img class="elementImage" src="/images/placeholder.png">
                         <h4>Projet Pendix</h4>
                         <p>Projet IOS de jeu du Pendu</p>
-                        <span>Status : Finis</span>
+                        <span>Status : Finis</span><br>
+                        <a target="blank" href="PDF/Pendix.pdf">Rapport de rendu</a>
                     </div>
                     <div class="elementDiv">
-                        <img class="elementImage" src="/images/gapm.png">
+                        <img class="elementImage" src="/images/cristo.png">
                         <h4>Projet Cristo</h4>
                         <p>Projet de reconnaissance vocale en IHM</p>
-                        <span>Status : Ebauche - Non hébergée</span>
+                        <span>Status : Ebauche - Non hébergé</span><br>
+                        <a target="blank" href="PDF/Cristo.pdf">Rapport de rendu</a>
                     </div>
                     <div class="elementDiv">
-                        <img class="elementImage" src="/images/gapm.png">
+                        <img class="elementImage" src="/images/placeholder.png">
                         <h4>TP webpizza</h4>
                         <p>Projet sous DJango de pizza</p>
-                        <span>Status : Ebauche - <a target="blank" href="http://mmorgat.ydns.eu:3000/">Hébergée</a></span>
+                        <span>Status : Ebauche - <a target="blank" href="http://mmorgat.projects.ydns.eu:3000/">Hébergé</a></span>
                     </div>
                 </div><br>
                 <h1>Expériences Professionelles</h1><br>
+                En tant que stagiaire puis alternant, j'ai travaillé sur des projets ancrés dans le monde professionnel : <br><br>
                 <div class="elementGrid">
                     <div class="elementDiv">
-                        <img class="elementImage" src="/images/gapm.png">
+                        <img class="elementImage" src="/images/placeholder.png">
                         <h4>Les Archives BTP</h4>
                         <p>Armoire à plan</p>
-                        <span>Status : <a target="blank" href="https://dtp-ged.fr">Prod</a></span>
+                        <span>Status : <a target="blank" href="https://dtp-ged.fr">Production - Privé</a></span>
                     </div>
                     <div class="elementDiv">
-                        <img class="elementImage" src="/images/gapm.png">
-                        <h4>Projet Pendix</h4>
-                        <p>Projet IOS de jeu du Pendu</p>
+                        <img class="elementImage" src="/images/placeholder.png">
+                        <h4>Gallimedia - Scripts Bash</h4>
+                        <p>Scripts bash d'automatisation de mise en place de serveurs webs et Drupal, migration de bases de données et création de documentation</p>
                         <span>Status : Finis</span>
-                    </div>
-                    <div class="elementDiv">
-                        <img class="elementImage" src="/images/gapm.png">
-                        <h4>Projet Cristo</h4>
-                        <p>Projet de reconnaissance vocale en IHM</p>
-                        <span>Status : Ebauche - Non hébergée</span>
-                    </div>
-                    <div class="elementDiv">
-                        <img class="elementImage" src="/images/gapm.png">
-                        <h4>TP webpizza</h4>
-                        <p>Projet sous DJango de pizza</p>
-                        <span>Status : <a href="http://mmorgat.ydns.eu:3000/">Ebauche - Hébergée</a></span>
                     </div>
                 </div><br>
             </div>
-            <span @click="nextPage" class="clickable bigArrow">&rarr;</span>
-        </div>
-    </div>
-    <div ref="page3" :class="`center transition page3 ${index === 3 ? 'show' : 'hidden'}`">
-        <div class="content">
-            <h1>Pourquoi Bweez ?</h1>
             <span @click="nextPage" class="clickable bigArrow">&rarr;</span>
         </div>
     </div>
@@ -172,6 +171,12 @@ h1{
 }
 
 .page2{
+    img{
+        width:200px;
+    }
+}
+
+.page3{
     .scrollable{
         max-height:700px;
     }
@@ -209,7 +214,7 @@ h1{
 
 .elementImage:hover {
     transform: scale(1.05);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .transition{
